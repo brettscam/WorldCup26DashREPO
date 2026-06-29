@@ -68,6 +68,18 @@ const TABS = [
   "Venues",
 ]
 
+const SOURCES = [
+  "FIFA.com",
+  "ESPN",
+  "Transfermarkt",
+  "FBref",
+  "IMF",
+  "Tourism Economics",
+  "SI",
+  "Covers",
+  "Sky Sports",
+]
+
 const scorers = [
   { n: "Messi", t: "ARG", c: "Inter Miami", g: 5, a: 0, wc: 18 },
   { n: "Haaland", t: "NOR", c: "Man City", g: 4, a: 0, wc: 4 },
@@ -515,8 +527,31 @@ export default function Dashboard() {
             MEGA DASHBOARD
           </span>
         </div>
-        <div style={{ color: COLOR.muted, fontSize: 10, marginBottom: 14 }}>
+        <div style={{ color: COLOR.muted, fontSize: 10, marginBottom: 10 }}>
           Updated Jun 28. 187 goals in 62 matches (3.02/game). Tap any element for details.
+        </div>
+
+        {/* Sources */}
+        <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap", marginBottom: 14 }}>
+          <span style={{ color: COLOR.muted, fontSize: 8, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1 }}>
+            Sources
+          </span>
+          {SOURCES.map((s) => (
+            <span
+              key={s}
+              style={{
+                color: COLOR.text,
+                fontSize: 9,
+                fontWeight: 600,
+                background: COLOR.card,
+                border: `1px solid ${COLOR.border}`,
+                borderRadius: 6,
+                padding: "2px 7px",
+              }}
+            >
+              {s}
+            </span>
+          ))}
         </div>
 
         {/* Tab bar */}
