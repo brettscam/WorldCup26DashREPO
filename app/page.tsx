@@ -311,25 +311,40 @@ const goalIntervals = [
   { interval: "76-90+", pct: 28 },
 ]
 
+// All 187 goals plotted by minute (X) and matchday (Y).
 const goalTimeline = [
-  { min: 3, p: "Messi", t: "ARG", type: "goahead", m: "ARG vs ALG", md: 1 },
-  { min: 12, p: "Balogun", t: "USA", type: "goahead", m: "USA vs PAR", md: 1 },
-  { min: 20, p: "Dembele", t: "FRA", type: "goahead", m: "FRA vs NOR", md: 3 },
-  { min: 30, p: "Haaland", t: "NOR", type: "equalizer", m: "NOR vs SEN", md: 1 },
-  { min: 38, p: "Yamal", t: "ESP", type: "goahead", m: "ESP vs KSA", md: 2 },
-  { min: 45, p: "Wissa", t: "COD", type: "equalizer", m: "POR vs COD", md: 1 },
-  { min: 55, p: "Mbappe", t: "FRA", type: "goahead", m: "FRA vs SEN", md: 1 },
-  { min: 58, p: "J.David", t: "CAN", type: "goahead", m: "CAN vs QAT", md: 2 },
-  { min: 60, p: "Fayzullaev", t: "UZB", type: "equalizer", m: "COL vs UZB", md: 1 },
-  { min: 62, p: "Kane", t: "ENG", type: "goahead", m: "ENG vs PAN", md: 3 },
-  { min: 72, p: "Brobbey", t: "NED", type: "goahead", m: "NED vs TUN", md: 3 },
-  { min: 75, p: "Isak", t: "SWE", type: "equalizer", m: "NED vs SWE", md: 1 },
-  { min: 77, p: "Plata", t: "ECU", type: "goahead", m: "ECU vs GER", md: 3 },
-  { min: 82, p: "Oyarzabal", t: "ESP", type: "goahead", m: "URU vs ESP", md: 3 },
-  { min: 87, p: "Haaland", t: "NOR", type: "goahead", m: "NOR vs IRQ", md: 2 },
-  { min: 88, p: "Kamada", t: "JPN", type: "equalizer", m: "JPN vs NED", md: 1 },
-  { min: 89, p: "Cunha", t: "BRA", type: "goahead", m: "BRA vs MAR", md: 1 },
-  { min: 93, p: "Ayhan", t: "TUR", type: "goahead", m: "TUR vs USA", md: 3 },
+  { min: 2, p: "", t: "IRQ", type: "other", md: 1 }, { min: 3, p: "Messi", t: "ARG", type: "goahead", md: 1 }, { min: 4, p: "", t: "PAN", type: "goahead", md: 1 }, { min: 6, p: "Nmecha", t: "GER", type: "goahead", md: 1 }, { min: 8, p: "Quinones", t: "MEX", type: "goahead", md: 1 }, { min: 9, p: "Angulo", t: "ECU", type: "equalizer", md: 1 },
+  { min: 10, p: "", t: "SEN", type: "other", md: 1 }, { min: 11, p: "Manzambi", t: "SUI", type: "goahead", md: 1 }, { min: 12, p: "Balogun", t: "USA", type: "goahead", md: 1 }, { min: 13, p: "", t: "AUS", type: "other", md: 1 }, { min: 17, p: "", t: "SWE", type: "other", md: 1 }, { min: 25, p: "Balogun", t: "USA", type: "other", md: 1 },
+  { min: 28, p: "Cunha", t: "BRA", type: "goahead", md: 1 }, { min: 30, p: "Haaland", t: "NOR", type: "equalizer", md: 1 }, { min: 31, p: "", t: "HAI", type: "other", md: 1 }, { min: 33, p: "", t: "FRA", type: "other", md: 1 }, { min: 34, p: "Messi", t: "ARG", type: "other", md: 1 }, { min: 35, p: "Sarr", t: "SEN", type: "goahead", md: 1 },
+  { min: 36, p: "", t: "BEL", type: "goahead", md: 1 }, { min: 38, p: "", t: "KSA", type: "goahead", md: 1 }, { min: 39, p: "", t: "ENG", type: "goahead", md: 1 }, { min: 41, p: "", t: "CPV", type: "other", md: 1 }, { min: 42, p: "", t: "COL", type: "other", md: 1 }, { min: 43, p: "", t: "ARG", type: "goahead", md: 1 },
+  { min: 44, p: "", t: "KSA", type: "other", md: 1 }, { min: 45, p: "Wissa", t: "COD", type: "equalizer", md: 1 }, { min: 46, p: "", t: "CRO", type: "goahead", md: 1 }, { min: 47, p: "Havertz", t: "GER", type: "other", md: 1 }, { min: 49, p: "", t: "ESP", type: "other", md: 1 }, { min: 50, p: "", t: "HAI", type: "equalizer", md: 1 },
+  { min: 51, p: "", t: "BEL", type: "goahead", md: 1 }, { min: 52, p: "Pepe", t: "CIV", type: "goahead", md: 1 }, { min: 53, p: "", t: "PAR", type: "goahead", md: 1 }, { min: 54, p: "", t: "BEL", type: "other", md: 1 }, { min: 55, p: "Mbappe", t: "FRA", type: "goahead", md: 1 }, { min: 57, p: "", t: "ECU", type: "other", md: 1 },
+  { min: 58, p: "", t: "ALG", type: "goahead", md: 1 }, { min: 59, p: "", t: "JPN", type: "goahead", md: 1 }, { min: 60, p: "Fayzullaev", t: "UZB", type: "equalizer", md: 1 }, { min: 62, p: "", t: "BEL", type: "goahead", md: 1 }, { min: 65, p: "Messi", t: "ARG", type: "other", md: 1 }, { min: 68, p: "", t: "EGY", type: "other", md: 1 },
+  { min: 70, p: "Undav", t: "GER", type: "goahead", md: 1 }, { min: 74, p: "", t: "ALG", type: "other", md: 1 }, { min: 75, p: "Isak", t: "SWE", type: "equalizer", md: 1 }, { min: 76, p: "", t: "MAR", type: "other", md: 1 }, { min: 77, p: "", t: "MEX", type: "goahead", md: 1 }, { min: 79, p: "", t: "SEN", type: "other", md: 1 },
+  { min: 80, p: "", t: "NZL", type: "goahead", md: 1 }, { min: 82, p: "", t: "KOR", type: "other", md: 1 }, { min: 83, p: "", t: "HAI", type: "goahead", md: 1 }, { min: 84, p: "", t: "MEX", type: "other", md: 1 }, { min: 85, p: "Undav", t: "GER", type: "other", md: 1 }, { min: 86, p: "", t: "ENG", type: "goahead", md: 1 },
+  { min: 87, p: "", t: "PAN", type: "other", md: 1 }, { min: 88, p: "Kamada", t: "JPN", type: "equalizer", md: 1 }, { min: 89, p: "Cunha", t: "BRA", type: "goahead", md: 1 }, { min: 90, p: "Mbappe", t: "FRA", type: "other", md: 1 }, { min: 91, p: "Mbaye", t: "SEN", type: "other", md: 1 }, { min: 93, p: "", t: "CUW", type: "goahead", md: 1 },
+  { min: 94, p: "", t: "CPV", type: "goahead", md: 1 }, { min: 95, p: "", t: "CUW", type: "other", md: 1 }, { min: 96, p: "", t: "MEX", type: "other", md: 1 }, { min: 2, p: "Saibari", t: "MAR", type: "goahead", md: 2 }, { min: 3, p: "", t: "QAT", type: "equalizer", md: 2 }, { min: 4, p: "", t: "BRA", type: "other", md: 2 },
+  { min: 6, p: "", t: "AUT", type: "other", md: 2 }, { min: 9, p: "", t: "UZB", type: "other", md: 2 }, { min: 10, p: "", t: "CPV", type: "goahead", md: 2 }, { min: 12, p: "", t: "JPN", type: "other", md: 2 }, { min: 14, p: "Oyarzabal", t: "ESP", type: "goahead", md: 2 }, { min: 16, p: "", t: "FRA", type: "equalizer", md: 2 },
+  { min: 17, p: "", t: "TUN", type: "goahead", md: 2 }, { min: 19, p: "Vargas", t: "SUI", type: "goahead", md: 2 }, { min: 20, p: "", t: "TUR", type: "goahead", md: 2 }, { min: 21, p: "", t: "GHA", type: "goahead", md: 2 }, { min: 22, p: "Munoz", t: "COL", type: "goahead", md: 2 }, { min: 23, p: "", t: "CRO", type: "other", md: 2 },
+  { min: 25, p: "", t: "IRN", type: "goahead", md: 2 }, { min: 27, p: "", t: "PAN", type: "equalizer", md: 2 }, { min: 28, p: "", t: "IRN", type: "equalizer", md: 2 }, { min: 31, p: "", t: "COL", type: "other", md: 2 }, { min: 32, p: "", t: "FRA", type: "goahead", md: 2 }, { min: 33, p: "", t: "HAI", type: "other", md: 2 },
+  { min: 34, p: "", t: "NZL", type: "equalizer", md: 2 }, { min: 35, p: "", t: "SEN", type: "other", md: 2 }, { min: 36, p: "", t: "NZL", type: "other", md: 2 }, { min: 37, p: "Just", t: "NZL", type: "goahead", md: 2 }, { min: 38, p: "Yamal", t: "ESP", type: "goahead", md: 2 }, { min: 40, p: "Vinicius", t: "BRA", type: "goahead", md: 2 },
+  { min: 42, p: "", t: "SCO", type: "other", md: 2 }, { min: 43, p: "", t: "KSA", type: "goahead", md: 2 }, { min: 44, p: "", t: "IRN", type: "other", md: 2 }, { min: 47, p: "", t: "FRA", type: "other", md: 2 }, { min: 49, p: "", t: "SUI", type: "goahead", md: 2 }, { min: 50, p: "Olwan", t: "JOR", type: "goahead", md: 2 },
+  { min: 51, p: "", t: "IRQ", type: "equalizer", md: 2 }, { min: 55, p: "", t: "FRA", type: "other", md: 2 }, { min: 56, p: "Mahmic", t: "BIH", type: "goahead", md: 2 }, { min: 58, p: "J.David", t: "CAN", type: "goahead", md: 2 }, { min: 62, p: "", t: "SEN", type: "other", md: 2 }, { min: 63, p: "", t: "BEL", type: "equalizer", md: 2 },
+  { min: 64, p: "", t: "COD", type: "goahead", md: 2 }, { min: 65, p: "", t: "PAN", type: "equalizer", md: 2 }, { min: 66, p: "Elanga", t: "SWE", type: "equalizer", md: 2 }, { min: 67, p: "", t: "BEL", type: "other", md: 2 }, { min: 69, p: "", t: "BIH", type: "other", md: 2 }, { min: 70, p: "", t: "MEX", type: "goahead", md: 2 },
+  { min: 71, p: "Just", t: "NZL", type: "other", md: 2 }, { min: 72, p: "", t: "BEL", type: "goahead", md: 2 }, { min: 73, p: "", t: "GHA", type: "goahead", md: 2 }, { min: 74, p: "Gakpo", t: "NED", type: "goahead", md: 2 }, { min: 76, p: "", t: "CIV", type: "goahead", md: 2 }, { min: 77, p: "", t: "FRA", type: "goahead", md: 2 },
+  { min: 78, p: "Ueda", t: "JPN", type: "goahead", md: 2 }, { min: 79, p: "Salah", t: "EGY", type: "goahead", md: 2 }, { min: 80, p: "Ronaldo", t: "POR", type: "other", md: 2 }, { min: 81, p: "", t: "ENG", type: "other", md: 2 }, { min: 82, p: "", t: "FRA", type: "goahead", md: 2 }, { min: 83, p: "", t: "MAR", type: "other", md: 2 },
+  { min: 84, p: "Vinicius", t: "BRA", type: "goahead", md: 2 }, { min: 85, p: "", t: "PAR", type: "equalizer", md: 2 }, { min: 86, p: "", t: "COL", type: "other", md: 2 }, { min: 87, p: "Haaland", t: "NOR", type: "goahead", md: 2 }, { min: 88, p: "", t: "ARG", type: "other", md: 2 }, { min: 89, p: "", t: "KOR", type: "goahead", md: 2 },
+  { min: 90, p: "", t: "KOR", type: "equalizer", md: 2 }, { min: 91, p: "", t: "ECU", type: "other", md: 2 }, { min: 93, p: "", t: "CZE", type: "other", md: 2 }, { min: 94, p: "", t: "BEL", type: "other", md: 2 }, { min: 95, p: "Arnautovic", t: "AUT", type: "other", md: 2 }, { min: 96, p: "", t: "CIV", type: "other", md: 2 },
+  { min: 1, p: "", t: "CUW", type: "other", md: 3 }, { min: 2, p: "", t: "HAI", type: "other", md: 3 }, { min: 4, p: "", t: "SEN", type: "other", md: 3 }, { min: 9, p: "", t: "PAN", type: "other", md: 3 }, { min: 10, p: "", t: "SUI", type: "goahead", md: 3 }, { min: 14, p: "", t: "ARG", type: "goahead", md: 3 },
+  { min: 15, p: "Sane", t: "GER", type: "goahead", md: 3 }, { min: 16, p: "", t: "JPN", type: "goahead", md: 3 }, { min: 20, p: "Dembele", t: "FRA", type: "goahead", md: 3 }, { min: 21, p: "", t: "PAN", type: "goahead", md: 3 }, { min: 23, p: "", t: "CAN", type: "equalizer", md: 3 }, { min: 27, p: "Dembele", t: "FRA", type: "other", md: 3 },
+  { min: 28, p: "", t: "NZL", type: "equalizer", md: 3 }, { min: 31, p: "", t: "JPN", type: "other", md: 3 }, { min: 32, p: "Dembele", t: "FRA", type: "other", md: 3 }, { min: 33, p: "", t: "PAN", type: "goahead", md: 3 }, { min: 34, p: "", t: "HAI", type: "goahead", md: 3 }, { min: 35, p: "", t: "PAN", type: "other", md: 3 },
+  { min: 37, p: "", t: "BEL", type: "goahead", md: 3 }, { min: 42, p: "Baena", t: "ESP", type: "goahead", md: 3 }, { min: 44, p: "Summerville", t: "NED", type: "goahead", md: 3 }, { min: 46, p: "", t: "SCO", type: "equalizer", md: 3 }, { min: 47, p: "", t: "GHA", type: "other", md: 3 }, { min: 48, p: "", t: "PAR", type: "goahead", md: 3 },
+  { min: 50, p: "", t: "CZE", type: "goahead", md: 3 }, { min: 52, p: "", t: "GER", type: "other", md: 3 }, { min: 54, p: "", t: "MAR", type: "other", md: 3 }, { min: 56, p: "", t: "ECU", type: "goahead", md: 3 }, { min: 62, p: "Kane", t: "ENG", type: "goahead", md: 3 }, { min: 63, p: "", t: "KSA", type: "other", md: 3 },
+  { min: 64, p: "", t: "BIH", type: "equalizer", md: 3 }, { min: 65, p: "", t: "COL", type: "other", md: 3 }, { min: 66, p: "", t: "EGY", type: "equalizer", md: 3 }, { min: 68, p: "Bellingham", t: "ENG", type: "goahead", md: 3 }, { min: 71, p: "", t: "PAR", type: "other", md: 3 }, { min: 72, p: "Brobbey", t: "NED", type: "goahead", md: 3 },
+  { min: 73, p: "", t: "IRN", type: "other", md: 3 }, { min: 76, p: "", t: "NZL", type: "other", md: 3 }, { min: 77, p: "Plata", t: "ECU", type: "goahead", md: 3 }, { min: 78, p: "", t: "KSA", type: "other", md: 3 }, { min: 80, p: "", t: "KOR", type: "goahead", md: 3 }, { min: 81, p: "", t: "AUT", type: "other", md: 3 },
+  { min: 82, p: "Oyarzabal", t: "ESP", type: "goahead", md: 3 }, { min: 84, p: "", t: "AUS", type: "goahead", md: 3 }, { min: 85, p: "", t: "NED", type: "goahead", md: 3 }, { min: 86, p: "Ronaldo", t: "POR", type: "goahead", md: 3 }, { min: 87, p: "", t: "BIH", type: "other", md: 3 }, { min: 88, p: "", t: "AUS", type: "other", md: 3 },
+  { min: 89, p: "", t: "NED", type: "goahead", md: 3 }, { min: 90, p: "", t: "KOR", type: "equalizer", md: 3 }, { min: 91, p: "", t: "BRA", type: "equalizer", md: 3 }, { min: 92, p: "", t: "NZL", type: "other", md: 3 }, { min: 93, p: "Ayhan", t: "TUR", type: "goahead", md: 3 }, { min: 94, p: "", t: "TUR", type: "other", md: 3 },
+  { min: 96, p: "Fidalgo", t: "MEX", type: "other", md: 3 },
 ]
 
 const venues = [
@@ -730,8 +745,11 @@ export default function Dashboard() {
               </ResponsiveContainer>
             </div>
 
-            <div style={titleStyle(COLOR.gold, 14)}>Goal Timeline: Go-Ahead vs Equalizer</div>
-            <div style={{ height: 260 }}>
+            <div style={titleStyle(COLOR.gold, 12)}>All 187 Goals: Go-Ahead vs Equalizer vs Other</div>
+            <div style={{ color: COLOR.muted, fontSize: 9, marginBottom: 4 }}>
+              Every goal plotted by minute (X) and matchday (Y). Gold = go-ahead. Cyan = equalizer. Gray = other. Named dots are key scorers.
+            </div>
+            <div style={{ height: 320 }}>
               <ResponsiveContainer>
                 <ScatterChart margin={{ left: 10, right: 20, top: 10, bottom: 25 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke={COLOR.border} />
@@ -750,6 +768,7 @@ export default function Dashboard() {
                     domain={[0.5, 3.5]}
                     ticks={[1, 2, 3]}
                     tickFormatter={(v) => `MD${v}`}
+                    label={{ value: "Matchday", angle: -90, position: "insideLeft", fill: COLOR.muted, fontSize: 9 }}
                   />
                   <Tooltip
                     cursor={{ strokeDasharray: "3 3" }}
@@ -757,14 +776,15 @@ export default function Dashboard() {
                       const { active, payload } = props
                       if (!active || !payload?.length) return null
                       const r = payload[0]?.payload
-                      const n = r?.type === "goahead" ? COLOR.gold : COLOR.cyan
+                      const n = r?.type === "goahead" ? COLOR.gold : r?.type === "equalizer" ? COLOR.cyan : "#556"
+                      const label = r?.type === "goahead" ? "GO-AHEAD" : r?.type === "equalizer" ? "EQUALIZER" : "OTHER"
                       return (
                         <div style={{ background: COLOR.panel, border: `1px solid ${COLOR.border}`, borderRadius: 8, padding: "8px 12px", fontFamily: FONT }}>
-                          <div style={{ color: n, fontWeight: 700, fontSize: 13 }}>{r?.type === "goahead" ? "GO-AHEAD" : "EQUALIZER"}</div>
+                          <div style={{ color: n, fontWeight: 700, fontSize: 13 }}>{label}</div>
                           <div style={{ color: COLOR.text, fontSize: 11 }}>
-                            {r?.p} ({r?.t}) {r?.min}'
+                            {r?.p ? `${r.p} (${r.t})` : r?.t} {r?.min}'
                           </div>
-                          <div style={{ color: COLOR.muted, fontSize: 10 }}>{r?.m}</div>
+                          <div style={{ color: COLOR.muted, fontSize: 10 }}>Matchday {r?.md}</div>
                         </div>
                       )
                     }) as any}
@@ -773,13 +793,19 @@ export default function Dashboard() {
                     data={goalTimeline}
                     shape={((props: any) => {
                       const { cx, cy, payload } = props
-                      const n = payload.type === "goahead" ? COLOR.gold : COLOR.cyan
+                      const isGoahead = payload.type === "goahead"
+                      const isEq = payload.type === "equalizer"
+                      const n = isGoahead ? COLOR.gold : isEq ? COLOR.cyan : "#3d4a5c"
+                      const r = payload.p ? (isGoahead || isEq ? 6 : 4) : isGoahead || isEq ? 4 : 2.5
+                      const op = payload.type === "other" ? 0.3 : isGoahead ? 0.7 : 0.8
                       return (
                         <g>
-                          <circle cx={cx} cy={cy} r={7} fill={n} fillOpacity={0.8} stroke={n} strokeWidth={1.5} />
-                          <text x={cx} y={cy - 10} textAnchor="middle" fill={n} fontSize={7} fontWeight={600}>
-                            {payload.p}
-                          </text>
+                          <circle cx={cx} cy={cy} r={r} fill={n} fillOpacity={op} stroke={n} strokeWidth={payload.p ? 1.5 : 0.5} />
+                          {payload.p && (isGoahead || isEq) && (
+                            <text x={cx} y={cy - r - 3} textAnchor="middle" fill={n} fontSize={6} fontWeight={600}>
+                              {payload.p}
+                            </text>
+                          )}
                         </g>
                       )
                     }) as any}
@@ -789,8 +815,9 @@ export default function Dashboard() {
             </div>
             <div style={{ display: "flex", gap: 12, margin: "6px 0" }}>
               {[
-                { c: COLOR.gold, l: "Go-ahead" },
-                { c: COLOR.cyan, l: "Equalizer" },
+                { c: COLOR.gold, l: `Go-ahead (${goalTimeline.filter((g) => g.type === "goahead").length}, ${Math.round((goalTimeline.filter((g) => g.type === "goahead").length / 187) * 100)}%)` },
+                { c: COLOR.cyan, l: `Equalizer (${goalTimeline.filter((g) => g.type === "equalizer").length}, ${Math.round((goalTimeline.filter((g) => g.type === "equalizer").length / 187) * 100)}%)` },
+                { c: "#3d4a5c", l: `Other (${goalTimeline.filter((g) => g.type === "other").length}, ${Math.round((goalTimeline.filter((g) => g.type === "other").length / 187) * 100)}%)` },
               ].map((e, i) => (
                 <span key={i} style={{ display: "flex", alignItems: "center", gap: 4 }}>
                   <span style={{ width: 10, height: 10, borderRadius: 5, background: e.c }} />
