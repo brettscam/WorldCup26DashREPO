@@ -4,11 +4,11 @@ A single-page World Cup 2026 analytics dashboard built with **Next.js (App Route
 
 ## What's inside
 
-Nine interactive tabs, each driven by real tournament data and clickable detail modals:
+Ten interactive tabs, each driven by real tournament data and clickable detail modals:
 
 | Tab | Highlights |
 | --- | --- |
-| **Scorers** | Top scorers (goals + assists), goal pace by matchday vs past WCs, goals/game by tournament, when-goals-are-scored, go-ahead vs equalizer timeline |
+| **Scorers** | Top scorers (goals + assists), goal pace by matchday vs past WCs, goals/game by tournament, when-goals-are-scored, and an all-187-goal timeline (go-ahead vs equalizer vs other) |
 | **Club Power** | Goals-per-player efficiency by club |
 | **Dual Nationals** | Eligibility choices and birth-country export |
 | **Squad ROI** | Value-for-money ranking + value vs ROI bubble chart |
@@ -17,6 +17,7 @@ Nine interactive tabs, each driven by real tournament data and clickable detail 
 | **Groups** | Group difficulty ranking by squad value |
 | **Route Index** | Knockout route difficulty (travel/opponents/bracket/fatigue) + distance travelled |
 | **Venues** | Goals-per-game by host venue |
+| **Possession** | Possession vs points scatter + response-goal breakdown |
 
 ## Getting started
 
@@ -35,4 +36,4 @@ npm run build && npm start
 
 ## Notes
 
-Data reflects a snapshot updated **Jun 28** (187 goals across 62 matches). Sources: FIFA.com, ESPN, Transfermarkt, FBref, IMF, Tourism Economics, SI, Covers, Sky Sports.
+Data reflects a snapshot updated **Jun 30** (187 goals across 62 matches). Sources: FIFA.com, ESPN, Transfermarkt, FBref, IMF, Tourism Economics, SI, Covers, Sky Sports.
